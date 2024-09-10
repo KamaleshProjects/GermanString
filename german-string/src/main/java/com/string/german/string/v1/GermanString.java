@@ -1,4 +1,4 @@
-package com.string.german.string;
+package com.string.german.string.v1;
 
 import java.nio.ByteBuffer;
 import java.nio.CharBuffer;
@@ -8,12 +8,17 @@ import java.nio.charset.StandardCharsets;
 
 /**
  * <p>
+ *     This entire implementation is futile since java doesn't give me any way to allocate anything on the stack
+ * </p>
+ *
+ * <p>
  *  The German String class attempts to treat strings as a sequence of characters that are conformant to specific
  *  behaviour specified in detail in the link provided at the bottom.
  * </p>
  * <p>German Strings offer specific advantages such as faster comparisons.</p>
  * @see <a href="https://cedardb.com/blog/german_strings/">German Strings</a>
  */
+@Deprecated
 public class GermanString {
 
     private final byte[] repr;
